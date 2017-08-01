@@ -17,7 +17,7 @@
 		}
 	});
 	colModel.push({ label: '操作', name: 'act', width: 50, formatter : function(value, options, row) {
-			return '<a href="${ctx}/cms?action=toDataForm&modelId=${model.id}&id='+row.id+'">修改</a>'
+			return '<a href="javascript:void(0)" onclick="edit('+row.id+')">修改</a>'
     	}
     });
 	$(document).ready(function(){
@@ -58,6 +58,9 @@
 	}
 	function add() {
 		window.addTab('添加数据', '${ctx}/cms?action=toDataForm&modelId=${model.id}');
+	}
+	function edit(id) {
+		window.addTab('修改数据', '${ctx}/cms?action=toDataForm&modelId=${model.id}&id='+id);
 	}
 	function del() {
     	var ids = $("#grid").jqGrid("getGridParam","selarrrow");

@@ -21,3 +21,7 @@ window.addTab = function(title, url) {
        data: { dataType: 'iframe', dataLink: url }
    }).loadData();
 }
+
+window.closeCurrentTab = function() {
+	top.$.fn.jerichoTab.closeCurrentTab();
+}

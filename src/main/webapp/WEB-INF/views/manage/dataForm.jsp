@@ -27,12 +27,14 @@
 				        	if(result.success == true) {
 				        		var r = confirm("保存成功，是否继续添加？");
 				    	    	if (r) {
+				    	    		$("input[name='id']").val('');
 				    	    		$("#inputForm").clearForm();
 				    	    		if (formUeditor) {
 				    	    			formUeditor.setContent('')
 				    	    		}
 				    	    	} else {
-				    	    		window.location.href = "${ctx}/cms?action=toDataList&modelId=${model.id}";
+				    	    		window.closeCurrentTab();
+				    	    		//window.location.href = "${ctx}/cms?action=toDataList&modelId=${model.id}";
 				    	    	}
 			 	            } else {
 			 	               alert(result.msg);
