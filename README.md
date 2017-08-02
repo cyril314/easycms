@@ -1,4 +1,4 @@
-#easycms  持续开发中。。。
+#easycms  持续开发中。。。别忘了给star一下
 maven， eclipse neon，jdk8(编译1.7)，tomcat，mysql5.6
 ### 简介
 Java EasyCms 使用最简单性能最高的框架，将cms系统简单到极致，灵活的栏目扩展，快速的构建普通网站
