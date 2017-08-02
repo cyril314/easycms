@@ -20,7 +20,7 @@ public class Column extends BaseEntity<Column> {
 	private String sql;// 下拉对应sql
 	private int status;// 状态
 	private String mappingData;// 映射字段
-
+	private String length;//数据限制输入长度
 	public Integer getModelId() {
 		return modelId;
 	}
@@ -108,4 +108,14 @@ public class Column extends BaseEntity<Column> {
 	public void setMappingData(String mappingData) {
 		this.mappingData = mappingData;
 	}
+
+	public String getLength() {
+		return length;
+	}
+
+	public void setLength(String length) {
+		this.length = length;
+	}
+
+	
 }

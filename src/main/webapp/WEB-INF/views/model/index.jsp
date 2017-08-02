@@ -77,7 +77,7 @@
 	        		multiselect: true
 	            });
 	        	$(window).resize(function(){
-	        		grid.jqGrid('setGridWidth',w - 190);
+	        		grid.jqGrid('setGridWidth',w - 200);
 	        		grid.jqGrid('setGridHeight',h);
 	        	}).resize();
 	        	

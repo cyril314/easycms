@@ -30,7 +30,7 @@
 							</div>
 						</li>
 						<li>
-							<span>Hello EasyCms - Login or Registe!</span>
+							<span>网站由<a target="_blank" href="https://gitee.com/sid_jiang/easycms">Java EasyCms</a>构建</span>
 						</li>
 					</ul>
 				</div>

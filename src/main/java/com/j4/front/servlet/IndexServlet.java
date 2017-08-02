@@ -15,6 +15,7 @@ import com.j4.cms.obj.Model;
 import com.j4.cms.service.DataService;
 import com.j4.cms.service.ModelService;
 import com.j4.common.obj.Ajax;
+import com.j4.util.StringUtil;
 @WebServlet("/index")
 public class IndexServlet extends BaseServlet {
 	/**
@@ -100,6 +101,9 @@ public class IndexServlet extends BaseServlet {
 		String modelId= request.getParameter("modelId");
 		Model model = modelService.get(Integer.parseInt(modelId));
 		request.setAttribute("model", model);
+		//查询对应品类下的产品
+		List<Data> list= dataService.findLimit(Integer.parseInt(modelId), 100);
+		request.setAttribute("list", list);
 		request.getRequestDispatcher(prefix + "front/list.jsp").forward(request, response);
 	}
 	public void detail(HttpServletRequest request, HttpServletResponse response) throws Exception {

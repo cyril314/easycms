@@ -86,7 +86,7 @@
 						<c:if test="${'1' == item.allowBlank }"><font color="red">*</font></c:if>
 						${item.name }:</label>
 						<div class="controls">
-							<input type="text" name="${mappingData }" maxlength="50" style="width:550px;" <c:if test="${'1' == item.allowBlank }">class="required"</c:if> value="${fns:getProperty(entity, mappingData)}"/>
+							<input type="text" name="${mappingData }" maxlength="${item.length }" style="width:550px;" <c:if test="${'1' == item.allowBlank }">class="required"</c:if> value="${fns:getProperty(entity, mappingData)}"/>
 							<span class="help-inline"> ${item.remark }</span>
 						</div>
 					</div>

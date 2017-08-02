@@ -33,6 +33,10 @@
 									</li>
 								</ul>
 							</li>
+							<li><a href="index">首页</a></li>
+							<li><a href="#">特卖</a></li>
+							<li><a href="#">广告</a></li>
+							<li><a href="#">关于我们</a></li>
 						</ul>
 						<!-- /.navbar-collapse -->
 					</div>

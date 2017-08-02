@@ -30,85 +30,16 @@
 		<!-- .grid-shop -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<!-- <div class="col-md-12">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="#">Home</a></li>
 						<li class="breadcrumb-item active">Library</li>
 					</ol>
-				</div>
+				</div> -->
 				<div class="col-sm-3 col-md-3">
 					<div class="weight">
-						<div class="title">
-							<h2>Categories</h2>
-						</div>
-						<div class="product-categories">
-							<ul>
-								<li><a href="#">Laptop & Computer  <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
-								<li><a href="#">Accessories   <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
-								<li><a href="#">Gaming  <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
-								<li><a href="#">Mac Computers  <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
-								<li><a href="#">Ultrabooks <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
-								<li><a href="#">Printers & Ink  <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="weight">
-						<div class="title">
-							<h2>filter by price</h2>
-						</div>
-						<div class="filter-outer">
-							<h3>Price</h3>
-							<!-- Bootstrap Pricing Slider by ZsharE -->
-							<div class="button-slider">
-								<div class="btn-group">
-									<div class="btn btn-default">
-										<p>Range: <strong>$<span id="sliderValue">100.0</span></strong> - <strong>$<span id="sliderValue2">1.700.00</span></strong> </p>
-										<input id="bootstrap-slider" data-slider-min="1" data-slider-max="1700" data-slider-step="1" data-slider-value="100" type="text">
-										<div class="valueLabelblck">Filter</div>
-									</div>
-								</div>
-							</div>
-							<!-- End of Bootstrap Pricing Slider by ZsharE -->
-							<div class="brands">
-								<h3>Brands</h3>
-								<ul>
-									<li><a href="#">Black  <span>(10)</span></a></li>
-									<li><a href="#">White   <span>(13)</span></a></li>
-									<li><a href="#">Blue  <span>(05)</span></a></li>
-									<li><a href="#">Red  <span>(87)</span></a></li>
-									<li><a href="#">Screen <span>(40)</span></a></li>
-								</ul>
-							</div>
-							<div class="color">
-								<h3>Color</h3>
-								<ul>
-									<li><a href="#" class="color-1"><span ></span></a></li>
-									<li><a href="#" class="color-2"><span ></span></a></li>
-									<li><a href="#" class="color-3"><span ></span></a></li>
-									<li><a href="#" class="color-4"><span ></span></a></li>
-									<li><a href="#" class="color-5"><span ></span></a></li>
-									<li><a href="#" class="color-6"><span ></span></a></li>
-									<li><a href="#" class="color-7"><span ></span></a></li>
-								</ul>
-							</div>
-							<div class="size">
-								<h3>Size</h3>
-								<ul>
-									<li><a href="#">L </a></li>
-									<li><a href="#">M </a></li>
-									<li><a href="#">S </a></li>
-									<li><a href="#">XL</a></li>
-									<li><a href="#">XXL</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="weight">
-						<div class="title">
-							<h2>Compare products</h2>
-						</div>
 						<div class="ads-lft">
-							<p>You have no item to compare. </p> <img src="assets/images/add-banner2.jpg" alt="add banner"> </div>
+						<img src="assets/images/add-banner2.jpg" alt="add banner"> </div>
 					</div>
 					<div class="weight">
 						<div class="title">
@@ -154,7 +85,6 @@
 					</div>
 				</div>
 				<div class="col-sm-9 col-md-9">
-					<div class="col-md-12 grid-banner"> <img src="assets/images/Grid-banner.png" alt="Grid-banner" /> </div>
 					<div class="grid-spr">
 						<div class="col-sm-6 col-md-6"> <a href="#" class="grid-view-icon"><i class="fa fa-th-large" aria-hidden="true"></i></a> <a href="#" class="list-view-icon"><i class="fa fa-list" aria-hidden="true"></i></a>
 							<div class="select-option">
@@ -174,12 +104,14 @@
 						</div>
 						<div class="col-sm-6 col-md-6 text-right"> <strong>Showing 1-12 <span>of 30 relults</span></strong> </div>
 					</div>
+					<!-- 产品循环输出 -->
+					<c:forEach var="item" items="${list}" varStatus="status">
 					<div class="col-xs-12 col-sm-12 col-md-12">
 						<!-- .pro-text -->
 						<div class="pro-text">
 							<div class="col-xs-12 col-sm-5 col-md-5">
 								<!-- .pro-img -->
-								<div class="pro-img"> <img src="assets/images/products/digital/20.jpg" alt="2">
+								<div class="pro-img"> <img src="${ctx }/${item.c5 }" alt="2">
 									<sup class="sale-tag">sale!</sup>
 									<!-- .hover-icon -->
 									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
@@ -189,9 +121,9 @@
 							</div>
 							<div class="col-xs-12 col-sm-7 col-md-7">
 								<div class="pro-text-outer list-pro-text">
-									<span>Macbook, Laptop</span>
+									<span>${item.c2 }</span>
 									<a href="#">
-										<h4> Apple Macbook Retina 23’ </h4>
+										<h4> ${item.c1 } </h4>
 									</a>
 									<div class="star2">
 										<ul>
@@ -204,9 +136,9 @@
 											<li><a href="#"> Add your review</a></li>
 										</ul>
 									</div>
-									<p class="wk-price">$290.00 </p>
-									<p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus.</p>
-									<a href="#" class="add-btn">Add to cart</a>
+									<p class="wk-price">¥${item.c3 } </p>
+									<p>${item.c9 }</p>
+									<a href="#" class="add-btn">购买</a>
 									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
 									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
 								</div>
@@ -214,242 +146,8 @@
 						</div>
 						<!-- /.pro-text -->
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<!-- .pro-text -->
-						<div class="pro-text">
-							<div class="col-xs-12 col-sm-5 col-md-5">
-								<!-- .pro-img -->
-								<div class="pro-img"> <img src="assets/images/products/digital/2.jpg" alt="2">
-									<sup class="sale-tag">sale!</sup>
-									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
-									<!-- /.hover-icon -->
-								</div>
-								<!-- /.pro-img -->
-							</div>
-							<div class="col-xs-12 col-sm-7 col-md-7">
-								<div class="pro-text-outer list-pro-text">
-									<span>Macbook, Laptop</span>
-									<a href="#">
-										<h4> Apple Macbook Retina 23’ </h4>
-									</a>
-									<div class="star2">
-										<ul>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="#">10 review(s)</a></li>
-											<li><a href="#"> Add your review</a></li>
-										</ul>
-									</div>
-									<p class="wk-price">$290.00 </p>
-									<p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus.</p>
-									<a href="#" class="add-btn">Add to cart</a>
-									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
-								</div>
-							</div>
-						</div>
-						<!-- /.pro-text -->
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<!-- .pro-text -->
-						<div class="pro-text">
-							<div class="col-xs-12 col-sm-5 col-md-5">
-								<!-- .pro-img -->
-								<div class="pro-img"> <img src="assets/images/products/digital/22.jpg" alt="2">									
-									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
-									<!-- /.hover-icon -->
-								</div>
-								<!-- /.pro-img -->
-							</div>
-							<div class="col-xs-12 col-sm-7 col-md-7">
-								<div class="pro-text-outer list-pro-text">
-									<span>Macbook, Laptop</span>
-									<a href="#">
-										<h4> Apple Macbook Retina 23’ </h4>
-									</a>
-									<div class="star2">
-										<ul>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="#">10 review(s)</a></li>
-											<li><a href="#"> Add your review</a></li>
-										</ul>
-									</div>
-									<p class="wk-price">$290.00 </p>
-									<p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus.</p>
-									<a href="#" class="add-btn">Add to cart</a>
-									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
-								</div>
-							</div>
-						</div>
-						<!-- /.pro-text -->
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<!-- .pro-text -->
-						<div class="pro-text">
-							<div class="col-xs-12 col-sm-5 col-md-5">
-								<!-- .pro-img -->
-								<div class="pro-img"> <img src="assets/images/products/digital/13.jpg" alt="2">								
-									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
-									<!-- /.hover-icon -->
-								</div>
-								<!-- /.pro-img -->
-							</div>
-							<div class="col-xs-12 col-sm-7 col-md-7">
-								<div class="pro-text-outer list-pro-text">
-									<span>Macbook, Laptop</span>
-									<a href="#">
-										<h4> Apple Macbook Retina 23’ </h4>
-									</a>
-									<div class="star2">
-										<ul>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="#">10 review(s)</a></li>
-											<li><a href="#"> Add your review</a></li>
-										</ul>
-									</div>
-									<p class="wk-price">$290.00 </p>
-									<p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus.</p>
-									<a href="#" class="add-btn">Add to cart</a>
-									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
-								</div>
-							</div>
-						</div>
-						<!-- /.pro-text -->
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<!-- .pro-text -->
-						<div class="pro-text">
-							<div class="col-xs-12 col-sm-5 col-md-5">
-								<!-- .pro-img -->
-								<div class="pro-img"> <img src="assets/images/products/digital/17.jpg" alt="2">
-									<sup class="sale-tag">sale!</sup>
-									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
-									<!-- /.hover-icon -->
-								</div>
-								<!-- /.pro-img -->
-							</div>
-							<div class="col-xs-12 col-sm-7 col-md-7">
-								<div class="pro-text-outer list-pro-text">
-									<span>Macbook, Laptop</span>
-									<a href="#">
-										<h4> Apple Macbook Retina 23’ </h4>
-									</a>
-									<div class="star2">
-										<ul>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="#">10 review(s)</a></li>
-											<li><a href="#"> Add your review</a></li>
-										</ul>
-									</div>
-									<p class="wk-price">$290.00 </p>
-									<p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus.</p>
-									<a href="#" class="add-btn">Add to cart</a>
-									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
-								</div>
-							</div>
-						</div>
-						<!-- /.pro-text -->
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<!-- .pro-text -->
-						<div class="pro-text">
-							<div class="col-xs-12 col-sm-5 col-md-5">
-								<!-- .pro-img -->
-								<div class="pro-img"> <img src="assets/images/products/digital/16.jpg" alt="2">
-									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
-									<!-- /.hover-icon -->
-								</div>
-								<!-- /.pro-img -->
-							</div>
-							<div class="col-xs-12 col-sm-7 col-md-7">
-								<div class="pro-text-outer list-pro-text">
-									<span>Macbook, Laptop</span>
-									<a href="#">
-										<h4> Apple Macbook Retina 23’ </h4>
-									</a>
-									<div class="star2">
-										<ul>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="#">10 review(s)</a></li>
-											<li><a href="#"> Add your review</a></li>
-										</ul>
-									</div>
-									<p class="wk-price">$290.00 </p>
-									<p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus.</p>
-									<a href="#" class="add-btn">Add to cart</a>
-									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
-								</div>
-							</div>
-						</div>
-						<!-- /.pro-text -->
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<!-- .pro-text -->
-						<div class="pro-text">
-							<div class="col-xs-12 col-sm-5 col-md-5">
-								<!-- .pro-img -->
-								<div class="pro-img"> <img src="assets/images/products/digital/14.jpg" alt="2">
-									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
-									<!-- /.hover-icon -->
-								</div>
-								<!-- /.pro-img -->
-							</div>
-							<div class="col-xs-12 col-sm-7 col-md-7">
-								<div class="pro-text-outer list-pro-text">
-									<span>Macbook, Laptop</span>
-									<a href="#">
-										<h4> Apple Macbook Retina 23’ </h4>
-									</a>
-									<div class="star2">
-										<ul>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="#">10 review(s)</a></li>
-											<li><a href="#"> Add your review</a></li>
-										</ul>
-									</div>
-									<p class="wk-price">$290.00 </p>
-									<p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus.</p>
-									<a href="#" class="add-btn">Add to cart</a>
-									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
-								</div>
-							</div>
-						</div>
-						<!-- /.pro-text -->
-					</div>
+					</c:forEach>
+					
 					<div class="col-xs-12">
 						<div class="grid-spr pag">
 							<!-- .pagetions -->
