@@ -6,10 +6,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-
+    <properties>
+        <jdk.version>1.7</jdk.version>
+    </properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -156,10 +157,23 @@
 		</dependency>
 	</dependencies>
 
+    <build>
+        <plugins>
+            <!--Compiler-->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 	<repositories>
 		<repository>
-			<id>my-alternate-repository</id>
-			<url>http://mvnrepository.com</url>
+			<id>central</id>
+			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
 		</repository>
 	</repositories>
 
