@@ -9,7 +9,7 @@ Java EasyCms 使用最简单性能最高的框架，将cms系统简单到极致�
 #静态网站生成工具
 teleport ultra 请求本地启动的项目即可，拷贝出来就能显示，报错就覆盖一下assets文件夹
 #纯html
-生成后就可以部署到最便宜的php空间上了，备案、域、空间推荐阿里云 https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=jolyjv1d&productCode=qingcloud&utm_source=jolyjv1d
+生成后就可以部署到最便宜的php空间上了，备案、域名、空间推荐阿里云 https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=jolyjv1d&productCode=qingcloud&utm_source=jolyjv1d
 #技术框架工具
 java，servlet，guice4， mybatis3， jstl，bootstrap2，bootstrap3，jerichotab，jqGrid，jquery，jquery-validation，layer，My97DatePicker，ueditor，zTree等等
 #登录
