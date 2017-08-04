@@ -1,14 +1,22 @@
 #easycms  持续开发中。。。别忘了给star一下
-#easycms  招募懂ui的同学，仅需要后端的美化，用到的插件美化，量不是太大 加群 451615244
+#招募
+懂ui的同学，仅需要后端的美化，用到的插件美化，量不是太大 加群 451615244
+#开发环境
 maven， eclipse neon，jdk8(编译1.7)，tomcat，mysql5.6
-### 简介
+#简介
 Java EasyCms 使用最简单性能最高的框架，将cms系统简单到极致，灵活的栏目扩展，快速的构建普通网站
 生成的静态演示站（测试）： www.j4cms.com
-###用到的框架工具
+#静态网站生成工具
+teleport ultra 请求本地启动的项目即可，拷贝出来就能显示，报错就覆盖一下assets文件夹
+#纯html
+生成后就可以部署到最便宜的php空间上了，备案、域、空间推荐阿里云 https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=jolyjv1d&productCode=qingcloud&utm_source=jolyjv1d
+#技术框架工具
 java，servlet，guice4， mybatis3， jstl，bootstrap2，bootstrap3，jerichotab，jqGrid，jquery，jquery-validation，layer，My97DatePicker，ueditor，zTree等等
-###登录
+#登录
 localhost:8080/easycms/cms  账户root 密码easycms在shiro.ini 文件中配置
 前端 localhost:8080/easycms/index,演示模板为商城
+#注意
+使用ueditor时要使用根目录，否则上传的图片不显示，即打包成 ROOT.war放到tomcat 的webapps下面
 ###几张截图
 ![栏目内容](https://git.oschina.net/uploads/images/2017/0801/214221_603e0f67_370580.jpeg "1.jpg")
 ![栏目配置](https://git.oschina.net/uploads/images/2017/0801/214244_2673239f_370580.jpeg "2.jpg")
