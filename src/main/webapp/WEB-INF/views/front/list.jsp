@@ -39,7 +39,7 @@
 				<div class="col-sm-3 col-md-3">
 					<div class="weight">
 						<div class="ads-lft">
-						<img src="assets/images/add-banner2.jpg" alt="add banner"> </div>
+						<img src="${ctx }/assets/images/add-banner2.jpg" alt="add banner"> </div>
 					</div>
 					<div class="weight">
 						<div class="title">
@@ -49,7 +49,7 @@
 							<ul>
 								<li>
 									<div class="e-product">
-										<div class="pro-img"> <img src="assets/images/products/digital/5.jpg" alt="2"> </div>
+										<div class="pro-img"> <img src="${ctx }/assets/images/products/digital/5.jpg" alt="2"> </div>
 										<div class="pro-text-outer"> <span>Macbook, Laptop</span>
 											<a href="#">
 												<h4> Apple Macbook Retina 23’ </h4>
@@ -60,7 +60,7 @@
 								</li>
 								<li>
 									<div class="e-product">
-										<div class="pro-img"> <img src="assets/images/products/digital/9.jpg" alt="2"> </div>
+										<div class="pro-img"> <img src="${ctx }/assets/images/products/digital/9.jpg" alt="2"> </div>
 										<div class="pro-text-outer"> <span>Macbook, Laptop</span>
 											<a href="#">
 												<h4> Apple Macbook Retina 23’ </h4>
@@ -71,7 +71,7 @@
 								</li>
 								<li>
 									<div class="e-product">
-										<div class="pro-img"> <img src="assets/images/products/digital/12.jpg" alt="2"> </div>
+										<div class="pro-img"> <img src="${ctx }/assets/images/products/digital/12.jpg" alt="2"> </div>
 										<div class="pro-text-outer"> <span>Macbook, Laptop</span>
 											<a href="#">
 												<h4> Apple Macbook Retina 23’ </h4>
@@ -180,7 +180,7 @@
 				<div class="copayright">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-md-6">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
-						<div class="text-right col-xs-12 col-sm-6 col-md-6"> <img src="assets/images/payment-img.jpg" alt="payment-img" /> </div>
+						<div class="text-right col-xs-12 col-sm-6 col-md-6"> <img src="${ctx }/assets/images/payment-img.jpg" alt="payment-img" /> </div>
 					</div>
 				</div>
 				<!-- /copayright -->

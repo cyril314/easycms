@@ -114,7 +114,7 @@
 									<div class="pro-text text-center">
 										<!-- .pro-img -->
 										<div class="pro-img">
-											<img src="${hot.c7 }" alt="2" />
+											<img src="${ctx }/${hot.c7 }" alt="2" />
 										</div>
 										<!-- /.pro-img -->
 										<div class="text-text">
@@ -181,7 +181,7 @@
 											<div class="pro-text text-center">
 												<!-- .pro-img -->
 												<div class="pro-img">
-													<img src="${hot.c5 }" alt="2" />
+													<img src="${ctx }/${hot.c5 }" alt="2" />
 												</div>
 												<!-- /.pro-img -->
 												<div class="pro-text-outer">
@@ -212,7 +212,7 @@
 											<div class="pro-text text-center">
 												<!-- .pro-img -->
 												<div class="pro-img">
-													<img src="${hot.c5 }" alt="2" />
+													<img src="${ctx }/${hot.c5 }" alt="2" />
 												</div>
 												<!-- /.pro-img -->
 												<div class="pro-text-outer">
@@ -243,7 +243,7 @@
 											<div class="pro-text text-center">
 												<!-- .pro-img -->
 												<div class="pro-img">
-													<img src="${hot.c5 }" alt="2" />
+													<img src="${ctx }/${hot.c5 }" alt="2" />
 												</div>
 												<!-- /.pro-img -->
 												<div class="pro-text-outer">
@@ -328,7 +328,7 @@
 												<!-- e-product -->
 												<div class="e-product">
 													<div class="pro-img">
-														<img src="${item.c5 }" alt="2">
+														<img src="${ctx }/${item.c5 }" alt="2">
 														<div class="hover-icon">
 															<a href="${item.c6 }"><i class="fa fa-search" aria-hidden="true"></i></a>
 														</div>
@@ -359,7 +359,7 @@
 												<!-- e-product -->
 												<div class="e-product">
 													<div class="pro-img">
-														<img src="${item.c5 }" alt="2">
+														<img src="${ctx }/${item.c5 }" alt="2">
 														<div class="hover-icon">
 															<a href="${item.c6 }"><i class="fa fa-search" aria-hidden="true"></i></a>
 														</div>
@@ -389,7 +389,7 @@
 												<!-- e-product -->
 												<div class="e-product">
 													<div class="pro-img">
-														<img src="${item.c5 }" alt="2">
+														<img src="${ctx }/${item.c5 }" alt="2">
 														<div class="hover-icon">
 															<a href="${item.c6 }"><i class="fa fa-search" aria-hidden="true"></i></a>
 														</div>
@@ -430,7 +430,7 @@
 						Copyright &copy; 2017.Company name All rights reserved. Java EasyCms
 					</div>
 					<div class="text-right col-xs-12 col-sm-6 col-md-6">
-						<img src="assets/images/payment-img.jpg" alt="payment-img" />
+						<img src="${ctx }/assets/images/payment-img.jpg" alt="payment-img" />
 					</div>
 				</div>
 			</div>
