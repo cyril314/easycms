@@ -86,6 +86,12 @@
 			</div>
 		</div>
 		<div class="control-group">
+			<label class="control-label">下拉sql</label>
+			<div class="controls">
+				<input type="text" name="sql" maxlength="50" class="required" value="${entity.sql }" />
+			</div>
+		</div>
+		<div class="control-group">
 			<label class="control-label">序号</label>
 			<div class="controls">
 				<input type="text" name="seq" maxlength="50" class="required" value="${entity.seq }" />

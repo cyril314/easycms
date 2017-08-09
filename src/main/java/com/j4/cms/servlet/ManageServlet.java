@@ -81,8 +81,8 @@ public class ManageServlet extends BaseServlet {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
+			this.write(new Ajax(false, "出现错误"+e.getMessage()), response);
 		}
-		this.write(new Ajax(false, "出现错误！"), response);
 	}
 
 	public void index(HttpServletRequest request, HttpServletResponse response) throws Exception {

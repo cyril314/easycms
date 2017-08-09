@@ -29,7 +29,7 @@
 										</li>
 									</c:forEach>
 									<li>
-										<a href="#"><img src="${ctx }/assets/images/menu-icon11.png" alt="menu-icon2" />All Categories</a>
+										<a href="#"><img src="${ctx }/assets/images/menu-icon11.png" alt="menu-icon2" />Java easycms</a>
 									</li>
 								</ul>
 							</li>

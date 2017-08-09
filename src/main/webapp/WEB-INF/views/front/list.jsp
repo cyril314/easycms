@@ -115,7 +115,7 @@
 								<div class="pro-img"> <img src="${ctx }/${item.c5 }" alt="2">
 									<sup class="sale-tag">sale!</sup>
 									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="#"><span class="icon icon-Heart"></span></a> <a href="#"><span class="icon icon-Search"></span></a> <a href="#"><span class="icon icon-Restart"></span></a> </div>
+									<div class="hover-icon"> <a href="${item.c6 }"><span class="icon icon-Heart"></span></a> <a href="${item.c6 }"><span class="icon icon-Search"></span></a> <a href="${item.c6 }"><span class="icon icon-Restart"></span></a> </div>
 									<!-- /.hover-icon -->
 								</div>
 								<!-- /.pro-img -->
@@ -123,7 +123,7 @@
 							<div class="col-xs-12 col-sm-7 col-md-7">
 								<div class="pro-text-outer list-pro-text">
 									<span>${item.c2 }</span>
-									<a href="#">
+									<a href="${item.c6 }">
 										<h4> ${item.c1 } </h4>
 									</a>
 									<div class="star2">
@@ -133,15 +133,15 @@
 											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
 											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
 											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="#">10 review(s)</a></li>
-											<li><a href="#"> Add your review</a></li>
+											<li><a href="${item.c6 }">10 review(s)</a></li>
+											<li><a href="${item.c6 }"> Add your review</a></li>
 										</ul>
 									</div>
 									<p class="wk-price">¥${item.c3 } </p>
 									<p>${item.c9 }</p>
-									<a href="#" class="add-btn">购买</a>
-									<a href="#" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="#" class="add-btn2"><span class="icon icon-Restart"></span></a>
+									<a href="${item.c6 }" class="add-btn">购买</a>
+									<a href="${item.c6 }" class="add-btn2"><span class="icon icon-Heart"></span></a>
+									<a href="${item.c6 }" class="add-btn2"><span class="icon icon-Restart"></span></a>
 								</div>
 							</div>
 						</div>
@@ -188,16 +188,6 @@
 			</div>
 		</div>
 	</footer>
-	<!-- sticky-socia -->
-	<aside id="sticky-social">
-		<ul>
-			<li><a href="#" class="fa fa-facebook" target="_blank"><span><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span></a></li>
-			<li><a href="#" class="fa fa-twitter" target="_blank"><span><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span></a></li>
-			<li><a href="#" class="fa fa-rss" target="_blank"><span><i class="fa fa-rss" aria-hidden="true"></i> RSS</span></a></li>
-			<li><a href="#" class="fa fa-pinterest-p" target="_blank"><span><i class="fa fa-pinterest-p" aria-hidden="true"></i> Pinterest</span></a></li>
-			<li><a href="#" class="fa fa-share-alt" target="_blank"><span><i class="fa fa-share-alt" aria-hidden="true"></i> Flickr</span></a></li>
-		</ul>
-	</aside>
 	<!-- /sticky-socia -->
 	<p id="back-top"> <a href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a> </p>
 	<%@include file="/WEB-INF/views/front/js.jsp" %>

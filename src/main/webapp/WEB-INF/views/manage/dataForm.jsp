@@ -125,7 +125,7 @@
 							</div>
 					</div>
 			   </c:when>
-			    <c:when test="${'editor' == item.type}">
+			   <c:when test="${'editor' == item.type}">
 			    	<div class="control-group">
 						<label class="control-label">${item.name }:</label>
 						<div class="controls">
@@ -139,7 +139,21 @@
 						</div>
 					</div>
 			   </c:when>
-			    <c:when test="${'combo' == item.type}"> 
+			   <c:when test="${'combo' == item.type}">
+			   		<div class="control-group">
+						<label class="control-label">
+						<c:if test="${'0' == item.allowBlank }"><font color="red">*</font></c:if>
+						${item.name }:</label>
+						<div class="controls">
+					    	<select name="${mappingData }" class="<c:if test="${'0' == item.allowBlank }">required</c:if>">
+								<option value="">请选择</option>
+								<c:forEach items="${item.combo}" var="op">
+									<option value="${op.value}" <c:if test="${op.value == fns:getProperty(entity, mappingData)}"> selected </c:if> >${op.value}</option>
+								</c:forEach>
+							</select>
+							<span class="help-inline"> ${item.remark }</span>
+						</div>
+					</div>
 			   </c:when>
 			</c:choose>
 		
