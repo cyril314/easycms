@@ -89,6 +89,7 @@
 			<label class="control-label">下拉sql</label>
 			<div class="controls">
 				<input type="text" name="sql" maxlength="50" class="required" value="${entity.sql }" />
+				<span class="help-inline">例：select type,value from combo where type = 1</span>
 			</div>
 		</div>
 		<div class="control-group">
