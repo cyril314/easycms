@@ -17,5 +17,11 @@
 		<from>/front/list/([0-9]+).html</from>
 		<to>/index?action=list&amp;modelId=$1</to>
 	</rule>
-
+	<rule>
+		<note>
+			连接
+		</note>
+		<from>/front/detail/([0-9]+)/([0-9]+).html</from>
+		<to>/index?action=detail&amp;modelId=$1&amp;id=$2</to>
+	</rule>
 </urlrewrite>

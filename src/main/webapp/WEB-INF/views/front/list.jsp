@@ -113,9 +113,13 @@
 							<div class="col-xs-12 col-sm-5 col-md-5">
 								<!-- .pro-img -->
 								<div class="pro-img"> <img src="${ctx }/${item.c5 }" alt="2">
-									<sup class="sale-tag">sale!</sup>
+									<sup class="sale-tag">hot!</sup>
 									<!-- .hover-icon -->
-									<div class="hover-icon"> <a href="${item.c6 }"><span class="icon icon-Heart"></span></a> <a href="${item.c6 }"><span class="icon icon-Search"></span></a> <a href="${item.c6 }"><span class="icon icon-Restart"></span></a> </div>
+									<div class="hover-icon">
+										<a href="${ctx }/front/detail/${item.modelId }/${item.id }.html"><span class="icon icon-Heart"></span></a>
+										<a href="${ctx }/front/detail/${item.modelId }/${item.id }.html"><span class="icon icon-Search"></span></a>
+										<a href="${ctx }/front/detail/${item.modelId }/${item.id }.html"><span class="icon icon-Restart"></span></a>
+									</div>
 									<!-- /.hover-icon -->
 								</div>
 								<!-- /.pro-img -->
@@ -123,7 +127,7 @@
 							<div class="col-xs-12 col-sm-7 col-md-7">
 								<div class="pro-text-outer list-pro-text">
 									<span>${item.c2 }</span>
-									<a href="${item.c6 }">
+									<a href="${ctx }/front/detail/${item.modelId }/${item.id }.html">
 										<h4> ${item.c1 } </h4>
 									</a>
 									<div class="star2">
@@ -133,15 +137,15 @@
 											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
 											<li class="yellow-color"><i class="fa fa-star" aria-hidden="true"></i></li>
 											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><a href="${item.c6 }">10 review(s)</a></li>
-											<li><a href="${item.c6 }"> Add your review</a></li>
+											<li><a href="${ctx }/front/detail/${item.modelId }/${item.id }.html">10 review(s)</a></li>
+											<li><a href="${ctx }/front/detail/${item.modelId }/${item.id }.html"> Add your review</a></li>
 										</ul>
 									</div>
 									<p class="wk-price">¥${item.c3 } </p>
 									<p>${item.c9 }</p>
-									<a href="${item.c6 }" class="add-btn">购买</a>
-									<a href="${item.c6 }" class="add-btn2"><span class="icon icon-Heart"></span></a>
-									<a href="${item.c6 }" class="add-btn2"><span class="icon icon-Restart"></span></a>
+									<a href="${ctx }/front/detail/${item.modelId }/${item.id }.html" class="add-btn">查看</a>
+									<a href="${ctx }/front/detail/${item.modelId }/${item.id }.html" class="add-btn2"><span class="icon icon-Heart"></span></a>
+									<a href="${ctx }/front/detail/${item.modelId }/${item.id }.html" class="add-btn2"><span class="icon icon-Restart"></span></a>
 								</div>
 							</div>
 						</div>

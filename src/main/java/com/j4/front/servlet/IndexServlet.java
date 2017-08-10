@@ -106,6 +106,14 @@ public class IndexServlet extends BaseServlet {
 		request.getRequestDispatcher(prefix + "front/list.jsp").forward(request, response);
 	}
 	public void detail(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		//主题市场   菜单
+		List<Model> models = modelService.getByParentId(2);
+		for (Model model : models) {
+			List<Model> childs = modelService.getByParentId(model.getId());
+			model.setChilds(childs);
+		}
+		request.setAttribute("models", models);
+		//end
 		String modelId= request.getParameter("modelId");
 		Model model = modelService.get(Integer.parseInt(modelId));
 		request.setAttribute("model", model);
