@@ -1,5 +1,5 @@
-##easycms  持续开发中。。。别忘了给star一下
-##招募
+easycms  持续开发中。。。别忘了给star一下
+招募
 懂ui的同学，仅需要后端的美化，用到的插件美化，量不是太大 加群 451615244
 ###开发环境
 maven， eclipse neon，jdk8(编译1.7)，tomcat，mysql5.6
