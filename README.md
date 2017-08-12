@@ -1,6 +1,6 @@
-easycms  持续开发中。。。别忘了给star一下
-招募
-懂ui的同学，仅需要后端的美化，用到的插件美化，量不是太大 加群 451615244
+#easycms  持续开发中。。。别忘了给star一下
+#招募不到ui
+没有ui自己干 加群 451615244
 ###开发环境
 maven， eclipse neon，jdk8(编译1.7)，tomcat，mysql5.6
 ###简介
@@ -18,8 +18,8 @@ localhost:8080/easycms/cms  账户root 密码easycms在shiro.ini 文件中配置
 ###注意
 使用ueditor时要使用根目录，否则上传的图片不显示，即打包成 ROOT.war放到tomcat 的webapps下面
 ###几张截图
-![栏目内容](https://git.oschina.net/uploads/images/2017/0801/214221_603e0f67_370580.jpeg "1.jpg")
-![栏目配置](https://git.oschina.net/uploads/images/2017/0801/214244_2673239f_370580.jpeg "2.jpg")
-![前端首页1](https://git.oschina.net/uploads/images/2017/0801/214256_e15aa814_370580.jpeg "3.jpg")
-![前端首页2](https://git.oschina.net/uploads/images/2017/0801/214312_76863b92_370580.jpeg "4.jpg")
-![前端首页3](https://git.oschina.net/uploads/images/2017/0801/214321_74c24ad1_370580.jpeg "5.jpg")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0812/113713_60f5d724_370580.png "QQ图片20170812111809.png")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0812/113721_66620f65_370580.png "QQ图片20170812113229.png")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0812/113730_fc5ca86f_370580.png "QQ图片20170729165140.png")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0812/113738_6364e2b1_370580.png "QQ图片20170812073235.png")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0812/113745_752d6023_370580.png "QQ图片20170812073303.png")
