@@ -86,10 +86,13 @@ public class ManageServlet extends BaseServlet {
 	}
 
 	public void index(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
+		List<Node> list = modelService.menu();
+		//构造菜单
+		request.setAttribute("menus", list);
 		request.getRequestDispatcher(prefix + "manage/index.jsp").forward(request, response);
 	}
 
+	
 	public void toHome(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		request.getRequestDispatcher(prefix + "manage/home.jsp").forward(request, response);

@@ -41,8 +41,8 @@
 		.append("&nbsp;&nbsp;<input class='btn' type='button' value='撤回' onclick='back()'/>")
 		.append("&nbsp;&nbsp;<input class='btn' type='button' value='删除' onclick='del()'/>");
 		$(window).resize(function() {
-			grid.jqGrid('setGridWidth',$(window).width()-2);
-			grid.jqGrid('setGridHeight',$(window).height()-150);
+			grid.jqGrid('setGridWidth',$(window).width()-30);
+			grid.jqGrid('setGridHeight',$(window).height()-160);
 		}).resize();
 	});
 	function searchForm() {
