@@ -33,8 +33,28 @@
 		<filter-name>ShiroFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	
+	<!--ehcache 页面缓存过滤器,要在 UrlRewriteFilter前面 -->
 	<filter>
+		<filter-name>PageCachingFilter</filter-name>
+		<filter-class>net.sf.ehcache.constructs.web.filter.SimplePageCachingFilter</filter-class>
+		<init-param>
+			<param-name>cacheName</param-name>
+			<param-value>SimplePageCachingFilter</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>PageCachingFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
+<!-- 	<filter-mapping>
+		<filter-name>PageCachingFilter</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>PageCachingFilter</filter-name>
+		<url-pattern>*.js</url-pattern>
+	</filter-mapping>
+ -->	<filter>
 		<filter-name>UrlRewriteFilter</filter-name>
 		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
 		<!-- 自定义配置文件的路径,是相对context的路径,(默认位置 /WEB-INF/urlrewrite.xml) -->
@@ -63,6 +83,8 @@
 		<dispatcher>REQUEST</dispatcher>
 		<dispatcher>FORWARD</dispatcher>
 	</filter-mapping>
+
+
 	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>

@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
+import org.joda.time.DateTime;
 
 import com.j4.base.BaseServlet;
 import com.j4.cms.obj.Data;
@@ -47,6 +48,9 @@ public class IndexServlet extends BaseServlet {
 	
 	public void index(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		this.common(request, response);
+		
+		DateTime dateTime = new DateTime();  
+		request.setAttribute("date", dateTime.toString("yyyy/MM/dd hh:mm:ss.SSSa"));
 		//设置主题市场打开
 		request.setAttribute("all_open", "all-open");
 		
