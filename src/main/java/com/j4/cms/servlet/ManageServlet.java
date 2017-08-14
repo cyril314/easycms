@@ -26,6 +26,7 @@ import com.j4.cms.service.DataService;
 import com.j4.cms.service.ModelService;
 import com.j4.common.obj.Ajax;
 import com.j4.common.obj.Pager;
+import com.j4.util.EhcacheUtil;
 import com.j4.util.JsonUtil;
 
 @WebServlet("/cms")
@@ -77,7 +78,9 @@ public class ManageServlet extends BaseServlet {
 			else if ("numMonth".equals(action)) {
 				numMonth(request, response);
 			}
-			
+			else if ("clearCache".equals(action)) {
+				clearCache(request, response);
+			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -283,5 +286,8 @@ public class ManageServlet extends BaseServlet {
 		Map<String, Object> map = countService.numMonth();
 		this.write(map, response);
 	}
-	
+	private void clearCache(HttpServletRequest request, HttpServletResponse response) {
+		EhcacheUtil.clearCache();
+		this.write(new Ajax(true, "清除成功"), response);
+	}
 }

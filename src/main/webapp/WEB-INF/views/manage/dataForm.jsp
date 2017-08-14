@@ -158,7 +158,7 @@
 			</c:choose>
 		
 		</c:forEach>
-			<input id="btnSubmit" class="btn btn-primary" style="right: 0;position: fixed;bottom: 2%;" type="submit" value="保 存"/>&nbsp;
+			<input id="btnSubmit" class="btn btn-primary" style="right: 0;position: fixed;bottom: 5%;" type="submit" value="保 存"/>&nbsp;
 	</form>
 </body>
 </html>

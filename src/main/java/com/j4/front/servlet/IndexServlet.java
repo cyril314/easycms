@@ -49,8 +49,7 @@ public class IndexServlet extends BaseServlet {
 	public void index(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		this.common(request, response);
 		
-		DateTime dateTime = new DateTime();  
-		request.setAttribute("date", dateTime.toString("yyyy/MM/dd hh:mm:ss.SSSa"));
+		
 		//设置主题市场打开
 		request.setAttribute("all_open", "all-open");
 		
@@ -138,5 +137,7 @@ public class IndexServlet extends BaseServlet {
 			model.setChilds(childs);
 		}
 		request.setAttribute("models", models);
+		DateTime dateTime = new DateTime();  
+		request.setAttribute("date", dateTime.toString("yyyy/MM/dd HH:mm:ss.SSSa"));
 	}
 }
