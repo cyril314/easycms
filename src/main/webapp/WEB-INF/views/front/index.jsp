@@ -11,8 +11,7 @@
 <body>
 <!--  Preloader  -->
 <div id="preloader">
-	<div id="loading">
-	</div>
+	<div id="loading"></div>
 </div>
 <header>
 	<!--  top-header  -->
@@ -56,7 +55,6 @@
 								</div>
 							</div>
 							</c:forEach>
-							
 						</div>
 						<!-- indicators -->
 						<ol class="carousel-indicators">
@@ -159,7 +157,6 @@
 				</div>
 			</div>
 
-
 			<div class="col-sm-8">
 				<!-- new-arrivals -->
 				<div class="new-arrivals">
@@ -168,7 +165,6 @@
 						<li><a data-toggle="tab" href="#menu1">特色</a></li>
 						<li><a data-toggle="tab" href="#menu2">经典</a></li>
 					</ul>
-
 					<div class="tab-content">
 						<div id="home" class="tab-pane fade in active">							
 							<div class="owl-demo-outer">
@@ -266,7 +262,6 @@
 					</div>
 				</div>
 				<!-- /new-arrivals -->
-
 			</div>
 		</div>
 	</div>
@@ -278,9 +273,7 @@
 		<div class="row">
 			<!-- title -->
 			<div class="title">
-				<h2>
-					热门商品					
-				</h2>
+				<h2>热门商品</h2>
 				<ul class="nav nav-tabs etabs">
 						<li class="active"><a data-toggle="tab" href="#phones">手机</a></li>
 						<li><a data-toggle="tab" href="#laptop">笔记本</a></li>
@@ -290,7 +283,6 @@
 			<!-- /title -->
 			<!-- electonics -->
 			<div class="electonics">
-
 				<div class="brd2 col-xs-12 col-sm-3 col-md-3">
 					<div id="home-slider2" class="carousel slide carousel-fade" data-ride="carousel">
 						<!-- .home-slider -->
@@ -416,7 +408,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 </section>
@@ -435,16 +426,12 @@
 				</div>
 			</div>
 			<!-- /copayright -->
-
 		</div>
 	</div>
 </footer>
-
-
 <p id="back-top">
 	<a href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 </p>
 <%@include file="/WEB-INF/views/front/js.jsp" %>
 </body>
-
 </html>

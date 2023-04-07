@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.11 (64 bit)
 MySQL - 5.6.24-log : Database - easycms
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -64,7 +65,7 @@ CREATE TABLE `column` (
   `status` int(11) DEFAULT '0' COMMENT '状态',
   `mapping_data` varchar(20) NOT NULL COMMENT '映射字段',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=263 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `column` */
 
@@ -320,7 +321,7 @@ CREATE TABLE `data_0` (
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   `update_by` varchar(20) DEFAULT NULL COMMENT '更新人',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 /*Data for the table `data_0` */
 
