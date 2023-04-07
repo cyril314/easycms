@@ -17,12 +17,12 @@
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
     </settings>
     <typeAliases>
-        <typeAlias alias="Model" type="com.fit.domain.Model"/>
-        <typeAlias alias="Column" type="com.fit.domain.Column"/>
         <typeAlias alias="Cfg" type="com.fit.domain.Cfg"/>
-        <typeAlias alias="Data" type="com.fit.domain.Data"/>
-        <typeAlias alias="Node" type="com.fit.domain.Node"/>
+        <typeAlias alias="Column" type="com.fit.domain.Column"/>
         <typeAlias alias="Combo" type="com.fit.domain.Combo"/>
+        <typeAlias alias="Data" type="com.fit.domain.Data"/>
+        <typeAlias alias="Model" type="com.fit.domain.Model"/>
+        <typeAlias alias="Node" type="com.fit.domain.Node"/>
     </typeAliases>
 
     <!-- - - - - - - 数据库环境配置- - - - - - - - - -->
